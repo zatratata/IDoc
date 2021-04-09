@@ -20,6 +20,16 @@
 		720EA162261EF96E00863730 /* StartScreenPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA160261EF96E00863730 /* StartScreenPageViewController.swift */; };
 		720EA163261EF96E00863730 /* StartScreenPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720EA161261EF96E00863730 /* StartScreenPageViewController.xib */; };
 		720EA168261F2EA300863730 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA167261F2EA300863730 /* Constants.swift */; };
+		720EA173261F3CDE00863730 /* PersonalCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA171261F3CDE00863730 /* PersonalCabinetViewController.swift */; };
+		720EA174261F3CDE00863730 /* PersonalCabinetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720EA172261F3CDE00863730 /* PersonalCabinetViewController.xib */; };
+		720EA182261F410C00863730 /* TableViewWithoutScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA181261F410C00863730 /* TableViewWithoutScroll.swift */; };
+		720EA196261F42CC00863730 /* ImageLabelArrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA194261F42CC00863730 /* ImageLabelArrowCell.swift */; };
+		720EA197261F42CC00863730 /* ImageLabelArrowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */; };
+		720EA1A1261F4B0E00863730 /* MenuWithTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */; };
+		725144AD26204233001CD920 /* MenuTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144AC26204233001CD920 /* MenuTableModel.swift */; };
+		725144B32620428B001CD920 /* MenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B22620428B001CD920 /* MenuCellModel.swift */; };
+		725144B926204766001CD920 /* MenuPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B826204766001CD920 /* MenuPages.swift */; };
+		725144C426208000001CD920 /* MenuControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144C326208000001CD920 /* MenuControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +69,16 @@
 		720EA160261EF96E00863730 /* StartScreenPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenPageViewController.swift; sourceTree = "<group>"; };
 		720EA161261EF96E00863730 /* StartScreenPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartScreenPageViewController.xib; sourceTree = "<group>"; };
 		720EA167261F2EA300863730 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		720EA171261F3CDE00863730 /* PersonalCabinetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCabinetViewController.swift; sourceTree = "<group>"; };
+		720EA172261F3CDE00863730 /* PersonalCabinetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalCabinetViewController.xib; sourceTree = "<group>"; };
+		720EA181261F410C00863730 /* TableViewWithoutScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithoutScroll.swift; sourceTree = "<group>"; };
+		720EA194261F42CC00863730 /* ImageLabelArrowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelArrowCell.swift; sourceTree = "<group>"; };
+		720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabelArrowCell.xib; sourceTree = "<group>"; };
+		720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithTableViewModel.swift; sourceTree = "<group>"; };
+		725144AC26204233001CD920 /* MenuTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableModel.swift; sourceTree = "<group>"; };
+		725144B22620428B001CD920 /* MenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellModel.swift; sourceTree = "<group>"; };
+		725144B826204766001CD920 /* MenuPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPages.swift; sourceTree = "<group>"; };
+		725144C326208000001CD920 /* MenuControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +139,10 @@
 		720278AB261DE3B300C5A05F /* iDoc */ = {
 			isa = PBXGroup;
 			children = (
-				72027913261DE99400C5A05F /* Resourses */,
+				720EA170261F3CA400863730 /* PersonalCabinet */,
 				720278EB261DE5E800C5A05F /* StartScreen */,
+				72027913261DE99400C5A05F /* Resourses */,
+				720EA17F261F40D000863730 /* Common */,
 				720278AC261DE3B300C5A05F /* AppDelegate.swift */,
 				720278B0261DE3B300C5A05F /* ViewController.swift */,
 				720278B7261DE3B700C5A05F /* LaunchScreen.storyboard */,
@@ -150,6 +172,94 @@
 				72027919261DEB8400C5A05F /* ImageAssets.xcassets */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		720EA170261F3CA400863730 /* PersonalCabinet */ = {
+			isa = PBXGroup;
+			children = (
+				720EA17B261F3CF200863730 /* PersonalCabinetVC */,
+			);
+			path = PersonalCabinet;
+			sourceTree = "<group>";
+		};
+		720EA17B261F3CF200863730 /* PersonalCabinetVC */ = {
+			isa = PBXGroup;
+			children = (
+				725144C8262090EC001CD920 /* ViewControllers */,
+				725144AB2620421A001CD920 /* Model */,
+				720EA19F261F4AEF00863730 /* ViewModel */,
+			);
+			path = PersonalCabinetVC;
+			sourceTree = "<group>";
+		};
+		720EA17F261F40D000863730 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				725144B7262046EE001CD920 /* Enums */,
+				720EA189261F416200863730 /* Cells */,
+				720EA180261F40E900863730 /* OverridenViews */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		720EA180261F40E900863730 /* OverridenViews */ = {
+			isa = PBXGroup;
+			children = (
+				720EA181261F410C00863730 /* TableViewWithoutScroll.swift */,
+			);
+			path = OverridenViews;
+			sourceTree = "<group>";
+		};
+		720EA189261F416200863730 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				720EA193261F42A300863730 /* ImageLabelArrowCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		720EA193261F42A300863730 /* ImageLabelArrowCell */ = {
+			isa = PBXGroup;
+			children = (
+				720EA194261F42CC00863730 /* ImageLabelArrowCell.swift */,
+				720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */,
+			);
+			path = ImageLabelArrowCell;
+			sourceTree = "<group>";
+		};
+		720EA19F261F4AEF00863730 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		725144AB2620421A001CD920 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				725144AC26204233001CD920 /* MenuTableModel.swift */,
+				725144B22620428B001CD920 /* MenuCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		725144B7262046EE001CD920 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				725144B826204766001CD920 /* MenuPages.swift */,
+				725144C326208000001CD920 /* MenuControllers.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		725144C8262090EC001CD920 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				720EA171261F3CDE00863730 /* PersonalCabinetViewController.swift */,
+				720EA172261F3CDE00863730 /* PersonalCabinetViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B196547BCA43FF455C5179C5 /* Frameworks */ = {
@@ -270,6 +380,8 @@
 				7202791A261DEB8400C5A05F /* ImageAssets.xcassets in Resources */,
 				720278B9261DE3B700C5A05F /* LaunchScreen.storyboard in Resources */,
 				720278B6261DE3B700C5A05F /* Assets.xcassets in Resources */,
+				720EA174261F3CDE00863730 /* PersonalCabinetViewController.xib in Resources */,
+				720EA197261F42CC00863730 /* ImageLabelArrowCell.xib in Resources */,
 				720278EF261DE60A00C5A05F /* StartScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +450,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				720278EE261DE60A00C5A05F /* StartScreenViewController.swift in Sources */,
+				720EA1A1261F4B0E00863730 /* MenuWithTableViewModel.swift in Sources */,
 				720278B1261DE3B300C5A05F /* ViewController.swift in Sources */,
 				720278AD261DE3B300C5A05F /* AppDelegate.swift in Sources */,
+				725144B32620428B001CD920 /* MenuCellModel.swift in Sources */,
 				720EA168261F2EA300863730 /* Constants.swift in Sources */,
+				725144B926204766001CD920 /* MenuPages.swift in Sources */,
+				725144AD26204233001CD920 /* MenuTableModel.swift in Sources */,
+				725144C426208000001CD920 /* MenuControllers.swift in Sources */,
+				720EA173261F3CDE00863730 /* PersonalCabinetViewController.swift in Sources */,
+				720EA196261F42CC00863730 /* ImageLabelArrowCell.swift in Sources */,
+				720EA182261F410C00863730 /* TableViewWithoutScroll.swift in Sources */,
 				720EA162261EF96E00863730 /* StartScreenPageViewController.swift in Sources */,
 				720278F7261DE66E00C5A05F /* StartScreenViewModel.swift in Sources */,
 			);

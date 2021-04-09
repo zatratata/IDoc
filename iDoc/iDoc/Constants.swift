@@ -10,4 +10,8 @@ import UIKit
 struct Constants {
     static let themeColor = UIColor(named: "mainThemeColor")
     static let lightThemeColor = UIColor(named: "lightThemeColor")
+    static let cellBorderColor = UIColor(named: "cellBorderColor")
+    
+    //CGFloat constants
+    static let smallCornerRadius: CGFloat = 5
 }
