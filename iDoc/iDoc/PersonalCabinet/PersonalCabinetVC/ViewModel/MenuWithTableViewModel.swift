@@ -10,7 +10,7 @@ import RxSwift
 
 final class MenuWithTableViewModel: NSObject {
     
-    var tableModel = PublishSubject<[MenuCellModel]>()
+    var tableModel = PublishSubject<[MenuControllers]>()
     
     //MARK: - Methods
     func setupTable(page: MenuPages) {

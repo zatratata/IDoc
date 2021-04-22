@@ -27,9 +27,29 @@
 		720EA197261F42CC00863730 /* ImageLabelArrowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */; };
 		720EA1A1261F4B0E00863730 /* MenuWithTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */; };
 		725144AD26204233001CD920 /* MenuTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144AC26204233001CD920 /* MenuTableModel.swift */; };
-		725144B32620428B001CD920 /* MenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B22620428B001CD920 /* MenuCellModel.swift */; };
+		725144B32620428B001CD920 /* CabinetCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B22620428B001CD920 /* CabinetCellModel.swift */; };
 		725144B926204766001CD920 /* MenuPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B826204766001CD920 /* MenuPages.swift */; };
 		725144C426208000001CD920 /* MenuControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144C326208000001CD920 /* MenuControllers.swift */; };
+		725144D3262091C5001CD920 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144D1262091C5001CD920 /* SurveyViewController.swift */; };
+		725144D4262091C5001CD920 /* SurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725144D2262091C5001CD920 /* SurveyViewController.xib */; };
+		72776D1F262996BC001D65B6 /* ConsultationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D1D262996BC001D65B6 /* ConsultationsViewController.swift */; };
+		72776D20262996BC001D65B6 /* ConsultationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72776D1E262996BC001D65B6 /* ConsultationsViewController.xib */; };
+		72776D272629A254001D65B6 /* RectangleImageTitleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D252629A254001D65B6 /* RectangleImageTitleTextCell.swift */; };
+		72776D282629A254001D65B6 /* RectangleImageTitleTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72776D262629A254001D65B6 /* RectangleImageTitleTextCell.xib */; };
+		72776D312629A70A001D65B6 /* ConsultationCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D302629A70A001D65B6 /* ConsultationCategories.swift */; };
+		72776D362629C0BE001D65B6 /* ConsultationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D352629C0BE001D65B6 /* ConsultationsViewModel.swift */; };
+		72776D402629CA74001D65B6 /* Specializations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D3F2629CA74001D65B6 /* Specializations.swift */; };
+		72776D462629D35F001D65B6 /* CyrcleImageTitleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D442629D35F001D65B6 /* CyrcleImageTitleTextCell.swift */; };
+		72776D472629D35F001D65B6 /* CyrcleImageTitleTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72776D452629D35F001D65B6 /* CyrcleImageTitleTextCell.xib */; };
+		72776D4E2629D970001D65B6 /* AdultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D4C2629D970001D65B6 /* AdultsViewController.swift */; };
+		72776D4F2629D970001D65B6 /* AdultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72776D4D2629D970001D65B6 /* AdultsViewController.xib */; };
+		72776D602629DDA3001D65B6 /* AdultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D5F2629DDA3001D65B6 /* AdultsViewModel.swift */; };
+		72776D692629DEF2001D65B6 /* AdultsPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D682629DEF2001D65B6 /* AdultsPages.swift */; };
+		72776D6F2629E00F001D65B6 /* MenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D6E2629E00F001D65B6 /* MenuCellModel.swift */; };
+		72776D772629E4F6001D65B6 /* MedicalCenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D762629E4F6001D65B6 /* MedicalCenters.swift */; };
+		72776D7E2629E6E7001D65B6 /* ReusableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D7C2629E6E7001D65B6 /* ReusableTableViewController.swift */; };
+		72776D7F2629E6E7001D65B6 /* ReusableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72776D7D2629E6E7001D65B6 /* ReusableTableViewController.xib */; };
+		72776D842629E770001D65B6 /* ReusableTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776D832629E770001D65B6 /* ReusableTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +96,29 @@
 		720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabelArrowCell.xib; sourceTree = "<group>"; };
 		720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithTableViewModel.swift; sourceTree = "<group>"; };
 		725144AC26204233001CD920 /* MenuTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableModel.swift; sourceTree = "<group>"; };
-		725144B22620428B001CD920 /* MenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellModel.swift; sourceTree = "<group>"; };
+		725144B22620428B001CD920 /* CabinetCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetCellModel.swift; sourceTree = "<group>"; };
 		725144B826204766001CD920 /* MenuPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPages.swift; sourceTree = "<group>"; };
 		725144C326208000001CD920 /* MenuControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuControllers.swift; sourceTree = "<group>"; };
+		725144D1262091C5001CD920 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		725144D2262091C5001CD920 /* SurveyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyViewController.xib; sourceTree = "<group>"; };
+		72776D1D262996BC001D65B6 /* ConsultationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationsViewController.swift; sourceTree = "<group>"; };
+		72776D1E262996BC001D65B6 /* ConsultationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultationsViewController.xib; sourceTree = "<group>"; };
+		72776D252629A254001D65B6 /* RectangleImageTitleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleImageTitleTextCell.swift; sourceTree = "<group>"; };
+		72776D262629A254001D65B6 /* RectangleImageTitleTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RectangleImageTitleTextCell.xib; sourceTree = "<group>"; };
+		72776D302629A70A001D65B6 /* ConsultationCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationCategories.swift; sourceTree = "<group>"; };
+		72776D352629C0BE001D65B6 /* ConsultationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationsViewModel.swift; sourceTree = "<group>"; };
+		72776D3F2629CA74001D65B6 /* Specializations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specializations.swift; sourceTree = "<group>"; };
+		72776D442629D35F001D65B6 /* CyrcleImageTitleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyrcleImageTitleTextCell.swift; sourceTree = "<group>"; };
+		72776D452629D35F001D65B6 /* CyrcleImageTitleTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CyrcleImageTitleTextCell.xib; sourceTree = "<group>"; };
+		72776D4C2629D970001D65B6 /* AdultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultsViewController.swift; sourceTree = "<group>"; };
+		72776D4D2629D970001D65B6 /* AdultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdultsViewController.xib; sourceTree = "<group>"; };
+		72776D5F2629DDA3001D65B6 /* AdultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultsViewModel.swift; sourceTree = "<group>"; };
+		72776D682629DEF2001D65B6 /* AdultsPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultsPages.swift; sourceTree = "<group>"; };
+		72776D6E2629E00F001D65B6 /* MenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellModel.swift; sourceTree = "<group>"; };
+		72776D762629E4F6001D65B6 /* MedicalCenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCenters.swift; sourceTree = "<group>"; };
+		72776D7C2629E6E7001D65B6 /* ReusableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewController.swift; sourceTree = "<group>"; };
+		72776D7D2629E6E7001D65B6 /* ReusableTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableTableViewController.xib; sourceTree = "<group>"; };
+		72776D832629E770001D65B6 /* ReusableTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +179,7 @@
 		720278AB261DE3B300C5A05F /* iDoc */ = {
 			isa = PBXGroup;
 			children = (
+				72776D1B26299677001D65B6 /* Consultations */,
 				720EA170261F3CA400863730 /* PersonalCabinet */,
 				720278EB261DE5E800C5A05F /* StartScreen */,
 				72027913261DE99400C5A05F /* Resourses */,
@@ -239,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				725144AC26204233001CD920 /* MenuTableModel.swift */,
-				725144B22620428B001CD920 /* MenuCellModel.swift */,
+				725144B22620428B001CD920 /* CabinetCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,8 +288,8 @@
 		725144B7262046EE001CD920 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				725144B826204766001CD920 /* MenuPages.swift */,
-				725144C326208000001CD920 /* MenuControllers.swift */,
+				72776D3E2629CA55001D65B6 /* Consultations */,
+				72776D3D2629CA3D001D65B6 /* Menu */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -256,10 +297,117 @@
 		725144C8262090EC001CD920 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				725144D0262091A3001CD920 /* SurveyViewController */,
+				725144C926209162001CD920 /* PersonalCabinet */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		725144C926209162001CD920 /* PersonalCabinet */ = {
+			isa = PBXGroup;
+			children = (
 				720EA171261F3CDE00863730 /* PersonalCabinetViewController.swift */,
 				720EA172261F3CDE00863730 /* PersonalCabinetViewController.xib */,
 			);
-			path = ViewControllers;
+			path = PersonalCabinet;
+			sourceTree = "<group>";
+		};
+		725144D0262091A3001CD920 /* SurveyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				725144D1262091C5001CD920 /* SurveyViewController.swift */,
+				725144D2262091C5001CD920 /* SurveyViewController.xib */,
+			);
+			path = SurveyViewController;
+			sourceTree = "<group>";
+		};
+		72776D1B26299677001D65B6 /* Consultations */ = {
+			isa = PBXGroup;
+			children = (
+				72776D7B2629E6B9001D65B6 /* ReusableTableViewController */,
+				72776D6D2629DFF1001D65B6 /* Protocols */,
+				72776D4B2629D5EF001D65B6 /* AdultsViewController */,
+				72776D1C26299684001D65B6 /* ConsultationsViewController */,
+			);
+			path = Consultations;
+			sourceTree = "<group>";
+		};
+		72776D1C26299684001D65B6 /* ConsultationsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72776D2F2629A6E2001D65B6 /* Models */,
+				72776D242629A1BB001D65B6 /* Cells */,
+				72776D1D262996BC001D65B6 /* ConsultationsViewController.swift */,
+				72776D1E262996BC001D65B6 /* ConsultationsViewController.xib */,
+				72776D352629C0BE001D65B6 /* ConsultationsViewModel.swift */,
+			);
+			path = ConsultationsViewController;
+			sourceTree = "<group>";
+		};
+		72776D242629A1BB001D65B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				72776D252629A254001D65B6 /* RectangleImageTitleTextCell.swift */,
+				72776D262629A254001D65B6 /* RectangleImageTitleTextCell.xib */,
+				72776D442629D35F001D65B6 /* CyrcleImageTitleTextCell.swift */,
+				72776D452629D35F001D65B6 /* CyrcleImageTitleTextCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		72776D2F2629A6E2001D65B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72776D302629A70A001D65B6 /* ConsultationCategories.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72776D3D2629CA3D001D65B6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				725144B826204766001CD920 /* MenuPages.swift */,
+				725144C326208000001CD920 /* MenuControllers.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		72776D3E2629CA55001D65B6 /* Consultations */ = {
+			isa = PBXGroup;
+			children = (
+				72776D3F2629CA74001D65B6 /* Specializations.swift */,
+				72776D762629E4F6001D65B6 /* MedicalCenters.swift */,
+			);
+			path = Consultations;
+			sourceTree = "<group>";
+		};
+		72776D4B2629D5EF001D65B6 /* AdultsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72776D4C2629D970001D65B6 /* AdultsViewController.swift */,
+				72776D4D2629D970001D65B6 /* AdultsViewController.xib */,
+				72776D5F2629DDA3001D65B6 /* AdultsViewModel.swift */,
+				72776D682629DEF2001D65B6 /* AdultsPages.swift */,
+			);
+			path = AdultsViewController;
+			sourceTree = "<group>";
+		};
+		72776D6D2629DFF1001D65B6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				72776D6E2629E00F001D65B6 /* MenuCellModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		72776D7B2629E6B9001D65B6 /* ReusableTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72776D7C2629E6E7001D65B6 /* ReusableTableViewController.swift */,
+				72776D7D2629E6E7001D65B6 /* ReusableTableViewController.xib */,
+				72776D832629E770001D65B6 /* ReusableTableViewModel.swift */,
+			);
+			path = ReusableTableViewController;
 			sourceTree = "<group>";
 		};
 		B196547BCA43FF455C5179C5 /* Frameworks */ = {
@@ -378,11 +526,17 @@
 				720EA163261EF96E00863730 /* StartScreenPageViewController.xib in Resources */,
 				72027915261DE9C400C5A05F /* ColorsAssets.xcassets in Resources */,
 				7202791A261DEB8400C5A05F /* ImageAssets.xcassets in Resources */,
+				72776D4F2629D970001D65B6 /* AdultsViewController.xib in Resources */,
 				720278B9261DE3B700C5A05F /* LaunchScreen.storyboard in Resources */,
+				725144D4262091C5001CD920 /* SurveyViewController.xib in Resources */,
 				720278B6261DE3B700C5A05F /* Assets.xcassets in Resources */,
 				720EA174261F3CDE00863730 /* PersonalCabinetViewController.xib in Resources */,
+				72776D7F2629E6E7001D65B6 /* ReusableTableViewController.xib in Resources */,
 				720EA197261F42CC00863730 /* ImageLabelArrowCell.xib in Resources */,
+				72776D282629A254001D65B6 /* RectangleImageTitleTextCell.xib in Resources */,
+				72776D472629D35F001D65B6 /* CyrcleImageTitleTextCell.xib in Resources */,
 				720278EF261DE60A00C5A05F /* StartScreenViewController.xib in Resources */,
+				72776D20262996BC001D65B6 /* ConsultationsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,18 +605,32 @@
 			files = (
 				720278EE261DE60A00C5A05F /* StartScreenViewController.swift in Sources */,
 				720EA1A1261F4B0E00863730 /* MenuWithTableViewModel.swift in Sources */,
+				72776D312629A70A001D65B6 /* ConsultationCategories.swift in Sources */,
 				720278B1261DE3B300C5A05F /* ViewController.swift in Sources */,
+				72776D1F262996BC001D65B6 /* ConsultationsViewController.swift in Sources */,
+				72776D4E2629D970001D65B6 /* AdultsViewController.swift in Sources */,
+				72776D462629D35F001D65B6 /* CyrcleImageTitleTextCell.swift in Sources */,
+				72776D7E2629E6E7001D65B6 /* ReusableTableViewController.swift in Sources */,
 				720278AD261DE3B300C5A05F /* AppDelegate.swift in Sources */,
-				725144B32620428B001CD920 /* MenuCellModel.swift in Sources */,
+				725144D3262091C5001CD920 /* SurveyViewController.swift in Sources */,
+				725144B32620428B001CD920 /* CabinetCellModel.swift in Sources */,
 				720EA168261F2EA300863730 /* Constants.swift in Sources */,
+				72776D272629A254001D65B6 /* RectangleImageTitleTextCell.swift in Sources */,
 				725144B926204766001CD920 /* MenuPages.swift in Sources */,
+				72776D842629E770001D65B6 /* ReusableTableViewModel.swift in Sources */,
 				725144AD26204233001CD920 /* MenuTableModel.swift in Sources */,
+				72776D772629E4F6001D65B6 /* MedicalCenters.swift in Sources */,
+				72776D6F2629E00F001D65B6 /* MenuCellModel.swift in Sources */,
 				725144C426208000001CD920 /* MenuControllers.swift in Sources */,
 				720EA173261F3CDE00863730 /* PersonalCabinetViewController.swift in Sources */,
 				720EA196261F42CC00863730 /* ImageLabelArrowCell.swift in Sources */,
+				72776D402629CA74001D65B6 /* Specializations.swift in Sources */,
+				72776D692629DEF2001D65B6 /* AdultsPages.swift in Sources */,
 				720EA182261F410C00863730 /* TableViewWithoutScroll.swift in Sources */,
+				72776D602629DDA3001D65B6 /* AdultsViewModel.swift in Sources */,
 				720EA162261EF96E00863730 /* StartScreenPageViewController.swift in Sources */,
 				720278F7261DE66E00C5A05F /* StartScreenViewModel.swift in Sources */,
+				72776D362629C0BE001D65B6 /* ConsultationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

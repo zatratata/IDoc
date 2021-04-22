@@ -27,7 +27,7 @@ final class ImageLabelArrowCell: UITableViewCell {
     }
     
     //MARK: - Methods
-    func setupCell(with model: MenuCellModel) {
+    func setupCell(with model: CabinetCellModel) {
         self.titleLabel.text = model.title
         if let image = UIImage(named: model.imageName) {
             convenientImageView.image = image

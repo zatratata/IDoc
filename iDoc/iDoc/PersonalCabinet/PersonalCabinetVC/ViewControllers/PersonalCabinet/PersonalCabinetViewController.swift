@@ -16,12 +16,14 @@ final class PersonalCabinetViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var profileNameLabel: UILabel!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: TableViewWithoutScroll!
+    
     
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        bindSelectRow()
     }
     
     //MARK: - Methods
@@ -30,10 +32,19 @@ final class PersonalCabinetViewController: UIViewController {
                            forCellReuseIdentifier: ImageLabelArrowCell.cellID)
         viewModel.tableModel.asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: ImageLabelArrowCell.cellID)) {
-                (index, model: MenuCellModel, cell: ImageLabelArrowCell) in
-                cell.setupCell(with: model)
+                (index, model: MenuControllers, cell: ImageLabelArrowCell) in
+                cell.setupCell(with: model.cellModel())
             }
             .disposed(by: disposeBag)
         viewModel.setupTable(page: .personalCabinet)
+    }
+    
+    private func bindSelectRow() {
+        tableView.rx
+          .modelSelected(MenuControllers.self)
+          .subscribe(onNext: { model in
+            self.navigationController?.pushViewController(model.controller(), animated: true)
+          })
+          .disposed(by: disposeBag)
     }
 }
