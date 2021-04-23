@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 protocol StartScreenViewModelProtocol: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     var firstViewController: UIViewController { get }
     var viewControllersCount: Int { get }

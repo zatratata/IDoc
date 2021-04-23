@@ -46,7 +46,9 @@ final class ConsultationViewModel {
                 let sectionModel = SectionModel(items: menu.map { $0 } )
                 return [sectionModel]
             case .search(let text):
-                let sectionModel = SectionModel(items: search.filter { $0.title.contains(text) } )
+                let sectionModel = SectionModel(items: search.filter {
+                    $0.title.lowercased().contains(text.lowercased())
+                } )
                 return [sectionModel]
             }
         }.asDriver(onErrorJustReturn: [SectionModel(items: ConsultationCategories.allCases)])

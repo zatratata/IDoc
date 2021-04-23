@@ -26,6 +26,8 @@
 		720EA196261F42CC00863730 /* ImageLabelArrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA194261F42CC00863730 /* ImageLabelArrowCell.swift */; };
 		720EA197261F42CC00863730 /* ImageLabelArrowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */; };
 		720EA1A1261F4B0E00863730 /* MenuWithTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */; };
+		722822072631A4D000F12601 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722822062631A4D000F12601 /* CustomNavigationBar.swift */; };
+		7228220C2631A50100F12601 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7228220B2631A50100F12601 /* CustomNavigationBar.xib */; };
 		725144AD26204233001CD920 /* MenuTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144AC26204233001CD920 /* MenuTableModel.swift */; };
 		725144B32620428B001CD920 /* CabinetCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B22620428B001CD920 /* CabinetCellModel.swift */; };
 		725144B926204766001CD920 /* MenuPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725144B826204766001CD920 /* MenuPages.swift */; };
@@ -95,6 +97,8 @@
 		720EA194261F42CC00863730 /* ImageLabelArrowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelArrowCell.swift; sourceTree = "<group>"; };
 		720EA195261F42CC00863730 /* ImageLabelArrowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabelArrowCell.xib; sourceTree = "<group>"; };
 		720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithTableViewModel.swift; sourceTree = "<group>"; };
+		722822062631A4D000F12601 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		7228220B2631A50100F12601 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
 		725144AC26204233001CD920 /* MenuTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableModel.swift; sourceTree = "<group>"; };
 		725144B22620428B001CD920 /* CabinetCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetCellModel.swift; sourceTree = "<group>"; };
 		725144B826204766001CD920 /* MenuPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPages.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 		720EA17F261F40D000863730 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				722822052631A4A800F12601 /* CustomNavigationBar */,
 				725144B7262046EE001CD920 /* Enums */,
 				720EA189261F416200863730 /* Cells */,
 				720EA180261F40E900863730 /* OverridenViews */,
@@ -274,6 +279,15 @@
 				720EA1A0261F4B0E00863730 /* MenuWithTableViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		722822052631A4A800F12601 /* CustomNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				722822062631A4D000F12601 /* CustomNavigationBar.swift */,
+				7228220B2631A50100F12601 /* CustomNavigationBar.xib */,
+			);
+			path = CustomNavigationBar;
 			sourceTree = "<group>";
 		};
 		725144AB2620421A001CD920 /* Model */ = {
@@ -529,6 +543,7 @@
 				72776D4F2629D970001D65B6 /* AdultsViewController.xib in Resources */,
 				720278B9261DE3B700C5A05F /* LaunchScreen.storyboard in Resources */,
 				725144D4262091C5001CD920 /* SurveyViewController.xib in Resources */,
+				7228220C2631A50100F12601 /* CustomNavigationBar.xib in Resources */,
 				720278B6261DE3B700C5A05F /* Assets.xcassets in Resources */,
 				720EA174261F3CDE00863730 /* PersonalCabinetViewController.xib in Resources */,
 				72776D7F2629E6E7001D65B6 /* ReusableTableViewController.xib in Resources */,
@@ -604,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				720278EE261DE60A00C5A05F /* StartScreenViewController.swift in Sources */,
+				722822072631A4D000F12601 /* CustomNavigationBar.swift in Sources */,
 				720EA1A1261F4B0E00863730 /* MenuWithTableViewModel.swift in Sources */,
 				72776D312629A70A001D65B6 /* ConsultationCategories.swift in Sources */,
 				720278B1261DE3B300C5A05F /* ViewController.swift in Sources */,

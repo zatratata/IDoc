@@ -32,12 +32,14 @@ final class ConsultationsViewController: UIViewController {
     }
     
     //MARK: - GUI
+    @IBOutlet weak var navBarContainerView: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar()
         setup()
         bindSelectRow()
     }
@@ -59,11 +61,25 @@ final class ConsultationsViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
+    private func setupNavBar() {
+        let navBar = CustomNavigationBar.view()
+        navBar?.isRootViewController = true
+        navBarContainerView.addSubview(navBar ?? UIView())
+        navBar?.snp.makeConstraints({ (make) in
+            make.edges.equalToSuperview()
+        })
+    }
+    
     private func bindSelectRow() {
         tableView.rx
-          .modelSelected(ConsultationCategories.self)
+            .modelSelected(MenuCellModel.self)
           .subscribe(onNext: { model in
-            self.navigationController?.pushViewController(AdultsViewController(), animated: true)
+            if let model = model as? ConsultationCategories {
+                print("Consultations")
+                self.navigationController?.pushViewController(AdultsViewController(), animated: true)
+            } else {
+                print("Specizlizations")
+            }
           })
           .disposed(by: disposeBag)
     }

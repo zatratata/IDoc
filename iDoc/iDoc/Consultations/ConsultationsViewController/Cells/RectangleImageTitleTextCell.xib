@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcA-Qn-clU">
-                        <rect key="frame" x="5" y="5" width="310" height="100"/>
+                        <rect key="frame" x="0.0" y="5" width="320" height="100"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CpD-rb-6Yi">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -29,13 +29,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Adults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqe-ol-kSM">
-                                <rect key="frame" x="110" y="10" width="190" height="18"/>
+                                <rect key="frame" x="110" y="10" width="200" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Консультации по заболеваниям взрослого и пожилого населения" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zho-A5-Hcg">
-                                <rect key="frame" x="110" y="33" width="190" height="54"/>
+                                <rect key="frame" x="110" y="33" width="200" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="mainThemeColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,8 +59,8 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="jcA-Qn-clU" secondAttribute="bottom" constant="10" id="AtC-v3-aKR"/>
-                    <constraint firstAttribute="trailing" secondItem="jcA-Qn-clU" secondAttribute="trailing" constant="5" id="Izr-aD-Qp1"/>
-                    <constraint firstItem="jcA-Qn-clU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="n34-dp-zFQ"/>
+                    <constraint firstAttribute="trailing" secondItem="jcA-Qn-clU" secondAttribute="trailing" id="Izr-aD-Qp1"/>
+                    <constraint firstItem="jcA-Qn-clU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="n34-dp-zFQ"/>
                     <constraint firstItem="jcA-Qn-clU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tFS-zo-ACr"/>
                 </constraints>
             </tableViewCellContentView>

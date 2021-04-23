@@ -8,27 +8,54 @@
 import Foundation
 
 enum MedicalCenters: CaseIterable, MenuCellModel {
-    case first
+    case lode
+    case kravira
+    case nordin
+    case eksana
+    case medAvenu
     
     var imageName: String {
         switch self {
-        case .first:
-            return "therapeutistIcon"
+        case .lode:
+            return "lodeIcon"
+        case .kravira:
+            return "kraviraIcon"
+        case .nordin:
+            return "nordinIcon"
+        case .eksana:
+            return "eksanaIcon"
+        case .medAvenu:
+            return "medAvenuIcon"
         }
     }
     
     var title: String {
         switch self {
-        case .first:
-            return "Терапевт"
-            
+        case .lode:
+            return "МЦ \"Лодэ\""
+        case .kravira:
+            return "МЦ \"Кравира\""
+        case .nordin:
+            return "МЦ \"Нордин\""
+        case .eksana:
+            return "МЦ \"Эксана\""
+        case .medAvenu:
+            return "МЦ \"МедАвеню\""
         }
     }
     
     var description: String {
         switch self {
-        case .first:
-            return "Заболевания общего профиля"
+        case .lode:
+            return "Многофункцианальный медицинский центр"
+        case .kravira:
+            return "Медцентр для детей и взрослых"
+        case .nordin:
+            return "Частный медицинский центр"
+        case .eksana:
+            return "Высококлассные специалисты"
+        case .medAvenu:
+            return "Широкий профиль опытных врачей"
         }
     }
 }

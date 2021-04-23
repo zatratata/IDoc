@@ -10,7 +10,9 @@ import ViewPager_Swift
 
 final class AdultsViewController: UIViewController {
     
-    private var viewModel = AdultsViewModel()
+    @IBOutlet weak var navBarContainerView: UIView!
+    private let viewPagerBarHeight: CGFloat = 30
+    private let viewModel = AdultsViewModel()
     
     //MARK: - GUI
     @IBOutlet weak var containerView: UIView!
@@ -18,10 +20,13 @@ final class AdultsViewController: UIViewController {
     private lazy var viewPager: ViewPager = {
         let options = ViewPagerOptions()
         options.tabViewBackgroundDefaultColor = Constants.backgroundColor ?? UIColor.white
-        options.tabViewTextDefaultColor = UIColor(named: "UnselectedLineColor") ?? UIColor.lightGray
-        options.tabViewTextHighlightColor = Constants.themeColor ?? UIColor.darkText
+        options.tabViewTextDefaultColor = Constants.themeColor ?? UIColor.lightGray
+        options.tabViewTextHighlightColor = Constants.lightThemeColor ?? UIColor.darkText
+        options.tabViewHeight = viewPagerBarHeight
         options.isTabBarShadowAvailable = false
-        options.tabViewBackgroundHighlightColor = Constants.lightThemeColor ?? UIColor.white
+        options.tabIndicatorViewBackgroundColor = Constants.selectedItemColor ?? .yellow
+        options.tabViewBackgroundHighlightColor = Constants.backgroundColor ?? UIColor.white
+        options.distribution = .segmented
         let pager = ViewPager(viewController: self, containerView: self.containerView)
         pager.setOptions(options: options)
         pager.setDelegate(delegate: viewModel)
@@ -29,8 +34,19 @@ final class AdultsViewController: UIViewController {
         return pager
     }()
 
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    private func setup() {
+        let navBar = CustomNavigationBar.view()
+        navBar?.navigationController = navigationController
+        navBarContainerView.addSubview(navBar ?? UIView())
+        navBar?.snp.makeConstraints({ (make) in
+            make.edges.equalToSuperview()
+        })
         viewPager.build()
     }
 }
