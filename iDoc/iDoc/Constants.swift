@@ -12,7 +12,7 @@ struct Constants {
     static let lightThemeColor = UIColor(named: "lightThemeColor")
     static let cellBorderColor = UIColor(named: "cellBorderColor")
     static let backgroundColor = UIColor(named: "backgroundColor")
-    static let selectedItemColor = UIColor(named: "selectedItemColor")
+    static let selectedItemColor = UIColor(named: "selectedItemColor") ?? .yellow
     
     //CGFloat constants
     static let smallCornerRadius: CGFloat = 5

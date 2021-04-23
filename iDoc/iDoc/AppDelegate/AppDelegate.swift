@@ -15,11 +15,9 @@ var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         if let window = self.window {
-            let navigationController = UINavigationController(
-                rootViewController: ConsultationsViewController())
-            navigationController.isNavigationBarHidden = true
-            window.rootViewController = navigationController
-            window.makeKeyAndVisible()
+            let coordinator = MainCoordinator.shared
+            coordinator.window = window
+            coordinator.coordinate(to: MainCoordinator.Target.start)
         }
             return true
         }

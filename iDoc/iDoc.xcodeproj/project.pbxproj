@@ -17,6 +17,9 @@
 		720278F7261DE66E00C5A05F /* StartScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720278F6261DE66E00C5A05F /* StartScreenViewModel.swift */; };
 		72027915261DE9C400C5A05F /* ColorsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72027914261DE9C400C5A05F /* ColorsAssets.xcassets */; };
 		7202791A261DEB8400C5A05F /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72027919261DEB8400C5A05F /* ImageAssets.xcassets */; };
+		720D4E642632DDD500136AF1 /* TabBarItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D4E632632DDD500136AF1 /* TabBarItemsModel.swift */; };
+		720D4E6C2632DDFA00136AF1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D4E6B2632DDFA00136AF1 /* TabBarController.swift */; };
+		720D4E7226330BE100136AF1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D4E7126330BE100136AF1 /* Coordinator.swift */; };
 		720EA162261EF96E00863730 /* StartScreenPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA160261EF96E00863730 /* StartScreenPageViewController.swift */; };
 		720EA163261EF96E00863730 /* StartScreenPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720EA161261EF96E00863730 /* StartScreenPageViewController.xib */; };
 		720EA168261F2EA300863730 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EA167261F2EA300863730 /* Constants.swift */; };
@@ -88,6 +91,9 @@
 		720278F6261DE66E00C5A05F /* StartScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewModel.swift; sourceTree = "<group>"; };
 		72027914261DE9C400C5A05F /* ColorsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsAssets.xcassets; sourceTree = "<group>"; };
 		72027919261DEB8400C5A05F /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		720D4E632632DDD500136AF1 /* TabBarItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsModel.swift; sourceTree = "<group>"; };
+		720D4E6B2632DDFA00136AF1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		720D4E7126330BE100136AF1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		720EA160261EF96E00863730 /* StartScreenPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenPageViewController.swift; sourceTree = "<group>"; };
 		720EA161261EF96E00863730 /* StartScreenPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartScreenPageViewController.xib; sourceTree = "<group>"; };
 		720EA167261F2EA300863730 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -183,12 +189,13 @@
 		720278AB261DE3B300C5A05F /* iDoc */ = {
 			isa = PBXGroup;
 			children = (
+				720D4E7026330BC200136AF1 /* AppDelegate */,
+				720D4E612632DD8C00136AF1 /* TabBar */,
 				72776D1B26299677001D65B6 /* Consultations */,
 				720EA170261F3CA400863730 /* PersonalCabinet */,
 				720278EB261DE5E800C5A05F /* StartScreen */,
 				72027913261DE99400C5A05F /* Resourses */,
 				720EA17F261F40D000863730 /* Common */,
-				720278AC261DE3B300C5A05F /* AppDelegate.swift */,
 				720278B0261DE3B300C5A05F /* ViewController.swift */,
 				720278B7261DE3B700C5A05F /* LaunchScreen.storyboard */,
 				720278BA261DE3B700C5A05F /* Info.plist */,
@@ -217,6 +224,32 @@
 				72027919261DEB8400C5A05F /* ImageAssets.xcassets */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		720D4E612632DD8C00136AF1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				720D4E622632DDB100136AF1 /* TabBarSetup */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		720D4E622632DDB100136AF1 /* TabBarSetup */ = {
+			isa = PBXGroup;
+			children = (
+				720D4E632632DDD500136AF1 /* TabBarItemsModel.swift */,
+				720D4E6B2632DDFA00136AF1 /* TabBarController.swift */,
+			);
+			path = TabBarSetup;
+			sourceTree = "<group>";
+		};
+		720D4E7026330BC200136AF1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				720278AC261DE3B300C5A05F /* AppDelegate.swift */,
+				720D4E7126330BE100136AF1 /* Coordinator.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		720EA170261F3CA400863730 /* PersonalCabinet */ = {
@@ -633,6 +666,8 @@
 				720EA168261F2EA300863730 /* Constants.swift in Sources */,
 				72776D272629A254001D65B6 /* RectangleImageTitleTextCell.swift in Sources */,
 				725144B926204766001CD920 /* MenuPages.swift in Sources */,
+				720D4E6C2632DDFA00136AF1 /* TabBarController.swift in Sources */,
+				720D4E7226330BE100136AF1 /* Coordinator.swift in Sources */,
 				72776D842629E770001D65B6 /* ReusableTableViewModel.swift in Sources */,
 				725144AD26204233001CD920 /* MenuTableModel.swift in Sources */,
 				72776D772629E4F6001D65B6 /* MedicalCenters.swift in Sources */,
@@ -642,6 +677,7 @@
 				720EA196261F42CC00863730 /* ImageLabelArrowCell.swift in Sources */,
 				72776D402629CA74001D65B6 /* Specializations.swift in Sources */,
 				72776D692629DEF2001D65B6 /* AdultsPages.swift in Sources */,
+				720D4E642632DDD500136AF1 /* TabBarItemsModel.swift in Sources */,
 				720EA182261F410C00863730 /* TableViewWithoutScroll.swift in Sources */,
 				72776D602629DDA3001D65B6 /* AdultsViewModel.swift in Sources */,
 				720EA162261EF96E00863730 /* StartScreenPageViewController.swift in Sources */,

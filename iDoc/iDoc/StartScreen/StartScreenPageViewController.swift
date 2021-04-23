@@ -112,11 +112,11 @@ final class StartScreenPageViewController: UIPageViewController {
     }
     //MARK: - Actions
     @objc private func userButtonTap() {
-        print("User")
+        MainCoordinator.shared.coordinate(to: MainCoordinator.Target.menu)
     }
     
     @objc private func doctorButtonTap() {
-        print("Doctor")
+        MainCoordinator.shared.coordinate(to: MainCoordinator.Target.menu)
     }
 }
 
